@@ -1,0 +1,23 @@
+{
+  "name": "@tetsuo/event-ts",
+  "version": "0.1.0",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "clean": "rimraf lib",
+    "build": "npm run clean && tsc",
+    "test": "npm run build && tape lib/test/*.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fp-ts": "^2.5.4"
+  },
+  "devDependencies": {
+    "@types/node": "^13.13.4",
+    "@types/tape": "^4.13.0",
+    "tape": "^5.0.0",
+    "typescript": "^3.8.3"
+  }
+}
